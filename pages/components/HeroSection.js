@@ -4,51 +4,56 @@ import PurchaseButton from './buttons/PurchaseButton'
 import MockupAnimations from './animations/MockupAnimations'
 
 export default function HeroSection() {
-	return (
-		<Wraper>
-			<ContentWrapper>
-				<TextWrapper>
-					<Title>
-						Design <br />
-						and code React app!
-					</Title>
-					<Description>
-						Don’t skip design. Learn design and code, by building real apps
-						with React and Swift. Complete courses about the best tools.
-					</Description>
-					<PurchaseButton
-						title='Start learning !'
-						subtitle='120+ hours of video'
-					/>
-				</TextWrapper>
-				<MockupAnimations />
-			</ContentWrapper>
-		</Wraper>
-	)
+    return (
+        <Wraper>
+            <ContentWrapper>
+                <TextWrapper>
+                    <Title>
+                        Design <br />
+                        and code React app!
+                    </Title>
+                    <Description>
+                        Don’t skip design. Learn design and code, by building
+                        real apps with React and Swift. Complete courses about
+                        the best tools.
+                    </Description>
+                    <PurchaseButton
+                        title='Start learning !'
+                        subtitle='120+ hours of video'
+                    />
+                </TextWrapper>
+                <MockupAnimations />
+            </ContentWrapper>
+        </Wraper>
+    )
 }
 
 const Wraper = styled.div`
-	background: linear-gradient(180deg, #4316db 0%, #9076e7 100%);
-	overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(180deg, #4316db 0%, #9076e7 100%);
+
+    overflow: hidden;
 `
 
 const ContentWrapper = styled.div`
-	max-width: 1234px;
-	margin: 0 auto;
-	padding: 200px 30px;
-	display: grid;
-	grid-template-columns: 360px auto;
+    position: relative;
+    max-width: 1234px;
+    margin: 0 auto;
+    padding: 200px 20px;
+    display: grid;
+    grid-template-columns: 360px auto;
 `
 const TextWrapper = styled.div`
-	max-width: 360px;
-	display: grid;
-	gap: 30px;
+    max-width: 360px;
+    display: grid;
+    gap: 30px;
 `
 
 const Title = styled(H1)`
-	color: #fff;
+    color: #fff;
 `
 const Description = styled.p`
-	font-size: 16px;
-	line-height: 130%;
+    font-size: 16px;
+    line-height: 130%;
 `

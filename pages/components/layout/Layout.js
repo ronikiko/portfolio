@@ -1,11 +1,15 @@
-import React from 'react';
+import React from 'react'
+import { Globalstyle } from '../styles/Globslstyle'
+import Header from './Header'
 
-function Layout({children}) {
+function Layout({ children }) {
     return (
-        <main>
+        <main className='main'>
+            <Globalstyle />
+            <Header />
             {children}
         </main>
-    );
+    )
 }
 
-export default Layout;
+export default Layout
